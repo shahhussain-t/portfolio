@@ -178,17 +178,24 @@
   <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span></h2>
 
-    <form action="#">
+    <form action="https://formspree.io/f/xdoqolng" method="POST">
       <div class="input-box">
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email Address">
+      
+          <input type="text" placeholder="Full Name" name="name" required>
+     
+       
+          <input type="email" placeholder="Email Address" name="email" required>
+
+        
       </div>
       <div class="input-box">
-        <input type="number" placeholder="Mobile Number">
-        <input type="text" placeholder="Email Subject">
+        
+        <input name="number" type="number" placeholder="Mobile Number" required>
+        <input name="subject" type="text" placeholder="Email Subject" required>
       </div>
-      <textarea name="" id="" cols="30" rows="10" placeholder="your message"></textarea>
-      <input type="submit" value="Send Message" class="btn">
+      <textarea  name="message" id="" cols="30" rows="10" placeholder="your message" required></textarea>
+      <!-- <input type="submit" value="Send Message" class="btn"> -->
+      <button class="btn" type="submit">Send Message</button>
     </form>
   </section>
 
